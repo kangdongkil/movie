@@ -35,7 +35,7 @@ function mouseClicked(){
 }
 function drawSaram(){
   image(img3,dir1+100,200);
-  rotate(frameCount / 10);
+  
    dir1=dir1+3;     
     if(dir1>720){
      dir1=-720;
@@ -43,7 +43,7 @@ function drawSaram(){
 }
 function drawSa(){
   image(img2,dir2+500,200);
-  rotate(10 / 200);
+  
   dir2=dir2+3;     
     if(dir2>720){
      dir2=-720;
