@@ -56,12 +56,8 @@ Particle.prototype.update = function(){
 Particle.prototype.display = function() {
   stroke(200, this.lifespan);
   strokeWeight(2);
-   fillColor = color(
-     Math.random() *255,
-     Math.random() *255, 
-     Math.random() *255, 
-     alpha);
-  fill(fillcolor);
+  
+  fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   ellipse(this.position.x, this.position.y, 12, 12);
 };
 
