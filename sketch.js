@@ -36,7 +36,7 @@ function draw() {
 }
 function drawBang() {
   
-  background(0);
+  
   
   // Translate the origin point to the center of the screen
   translate(width/2, height/2);
