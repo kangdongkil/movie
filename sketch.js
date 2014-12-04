@@ -9,7 +9,7 @@ function setup() {
 
 function draw() {
   
-  background(51);
+  background(0);
   system.addParticle();
   system.run();
   image(img,img.width/2,img.height/2);
