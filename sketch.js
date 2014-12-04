@@ -46,6 +46,7 @@ function drawSa(){
     if(dir2>720){
      dir2=-720;
 }
+}
 
 // A simple Particle class
 var Particle = function(position) {
