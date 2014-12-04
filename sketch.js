@@ -3,11 +3,12 @@ var img;
 
 function setup() {
   createCanvas(720, 400);
+  img = loadImage("bunsu.png");
   system = new ParticleSystem(createVector(width/2, 50));
 }
 
 function draw() {
-  img = loadImage("bunsu.png");
+  
   background(51);
   system.addParticle();
   system.run();
