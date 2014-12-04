@@ -9,10 +9,10 @@ function setup() {
 
 function draw() {
   
-  background(0);
+  background(img);
   system.addParticle();
   system.run();
-  image(img,img.width/2,img.height/2);
+  
 }
 
 function mouseClicked(){
