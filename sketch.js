@@ -2,7 +2,8 @@ var system;
 var img;
 var img2;
 var img3;
-var dir1=1;
+var dir1=0;
+var dir2=0;
 var f = 0;
 
 function setup() {
@@ -41,6 +42,9 @@ function drawSaram(){
 }
 function drawSa(){
   image(img2,500,200);
+  dir2=dir2+3;     
+    if(dir2>720){
+     dir2=-720;
 }
 
 // A simple Particle class
