@@ -43,7 +43,7 @@ function drawSaram(){
 }
 function drawSa(){
   image(img2,dir2+500,200);
-  rotate(frameCount / 10);
+  rotate(10 / 200);
   dir2=dir2+3;     
     if(dir2>720){
      dir2=-720;
