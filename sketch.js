@@ -12,8 +12,9 @@ function draw() {
   background(51);
   system.addParticle();
   system.run();
+  image(img,img.width/2,img.height/2);
 }
-drawBunsu();
+
 function mouseClicked(){
   if(f===0){
         f=1;
@@ -22,9 +23,7 @@ function mouseClicked(){
     }
   
 }
-function drawBunsu(){
-  image(img,img.width/2,img.height/2);
-}
+
 // A simple Particle class
 var Particle = function(position) {
   this.acceleration = createVector(0, 0.05);
