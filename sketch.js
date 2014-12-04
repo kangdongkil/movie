@@ -16,7 +16,7 @@ function draw() {
   background(img);
   system.addParticle();
   system.run();
-  drawSa();
+  
   
 }
 
