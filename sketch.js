@@ -52,7 +52,7 @@ function Jitter() {
 
   this.display = function() {
 
-    ellipse(this.x+100,this.y-100, 30, 30);
+    ellipse(this.x+130,this.y-100, 30, 30);
   }
 };
 
