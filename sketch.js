@@ -3,7 +3,7 @@ var img;
 
 function setup() {
   createCanvas(720, 400);
-  img = loadImage("cupido.GIF");
+  img = loadImage("cupido.gif");
   system = new ParticleSystem(createVector(width/2, 50));
 }
 
