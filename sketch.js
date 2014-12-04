@@ -38,6 +38,7 @@ function drawSaram(){
     if(dir1>1700){
      dir1=-1700;
 }
+}
 function drawSa(){
   image(img2,500,200);
 }
@@ -97,4 +98,4 @@ ParticleSystem.prototype.run = function() {
       this.particles.splice(i, 1);
     }
   }
-}
+};
