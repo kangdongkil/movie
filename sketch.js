@@ -6,6 +6,7 @@ var dir1=0;
 var dir2=0;
 var f = 0;
 var r;
+var bug; 
 
 // Angle and angular velocity, accleration
 var theta;
@@ -18,7 +19,7 @@ function setup() {
   img2 = loadImage("s.png")
   img3 = loadImage("s2.png")
   system = new ParticleSystem(createVector(width/2, 50));
- 
+  bug = new Jitter();
  
 }
 
@@ -31,7 +32,28 @@ function draw() {
   drawSaram();
   drawBang();
 }
+function drawBang() {
+  
+  bug.move();
+  bug.display();
+}
 
+// Jitter class
+function Jitter() {
+  this.x = random(width);
+  this.y = random(height);
+  this.diameter = random(10, 30);
+  this.speed = 1;
+
+  this.move = function() {
+    this.x += random(-this.speed, this.speed);
+    this.y += random(-this.speed, this.speed);
+  };
+
+  this.display = function() {
+    ellipse(this.x, this.y, this.diameter, this.diameter);
+  }
+};
 
 function mouseClicked(){
   if(f===0){
