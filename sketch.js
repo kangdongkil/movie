@@ -32,7 +32,7 @@ function mouseClicked(){
   
 }
 function drawSaram(){
-  image(img3,100,190);
+  image(img3,100,200);
 }
 function drawSa(){
   image(img2,500,200);
