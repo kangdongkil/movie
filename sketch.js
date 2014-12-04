@@ -12,10 +12,8 @@ function draw() {
   background(51);
   system.addParticle();
   system.run();
-  drawBunsu();
-
-  
 }
+drawBunsu();
 function mouseClicked(){
   if(f===0){
         f=1;
