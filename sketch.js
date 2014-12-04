@@ -16,7 +16,7 @@ function draw() {
   background(img);
   system.addParticle();
   system.run();
-  image(img2);
+  drawSa();
   
 }
 
@@ -27,6 +27,9 @@ function mouseClicked(){
         f=0;
     }
   
+}
+function drawSa(){
+  image(img2,360,200);
 }
 
 // A simple Particle class
