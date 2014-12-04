@@ -56,7 +56,7 @@ Particle.prototype.update = function(){
 Particle.prototype.display = function() {
   stroke(200, this.lifespan);
   strokeWeight(2);
-  fill(0, this.lifespan);
+  fill(20,15,200);
   ellipse(this.position.x, this.position.y, 12, 12);
 };
 
