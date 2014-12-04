@@ -1,6 +1,7 @@
 var system;
 var img;
 var img2;
+var f = 0;
 
 function setup() {
   createCanvas(720, 400);
