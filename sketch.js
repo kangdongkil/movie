@@ -51,7 +51,7 @@ function Jitter() {
   };
 
   this.display = function() {
-    ellipse(360, 370, this.diameter, this.diameter);
+    ellipse(340, 10, 50, 50);
   }
 };
 
