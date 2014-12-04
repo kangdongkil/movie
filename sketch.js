@@ -3,7 +3,7 @@ var img;
 
 function setup() {
   createCanvas(720, 400);
-  img = loadImage("bunsu.png");
+  img = loadImage("bunsu.PNG");
   system = new ParticleSystem(createVector(width/2, 50));
 }
 
