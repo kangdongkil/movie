@@ -97,4 +97,4 @@ ParticleSystem.prototype.run = function() {
       this.particles.splice(i, 1);
     }
   }
-};
+}
