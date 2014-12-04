@@ -1,12 +1,14 @@
 var system;
 var img;
 var img2;
+var img3;
 var f = 0;
 
 function setup() {
   createCanvas(720, 400);
   img = loadImage("bunsu.PNG");
   img2 = loadImage("s.png")
+  img3 = loadImage("s2.png")
   system = new ParticleSystem(createVector(width/2, 50));
  
 }
@@ -17,6 +19,7 @@ function draw() {
   system.addParticle();
   system.run();
   drawSa();
+  drawSaram();
   
 }
 
@@ -27,6 +30,9 @@ function mouseClicked(){
         f=0;
     }
   
+}
+function drawSaram(){
+  image(img2,500,200);
 }
 function drawSa(){
   image(img2,500,200);
