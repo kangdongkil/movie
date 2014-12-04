@@ -1,4 +1,5 @@
 var system;
+var img;
 
 function setup() {
   createCanvas(720, 400);
