@@ -33,10 +33,10 @@ function mouseClicked(){
   
 }
 function drawSaram(){
-  image(img3,dir1,200);
+  image(img3,dir1+100,200);
    dir1=dir1+3;     
-    if(dir1>1700){
-     dir1=-1700;
+    if(dir1>720){
+     dir1=-720;
 }
 }
 function drawSa(){
