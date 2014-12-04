@@ -1,9 +1,11 @@
 var system;
 var img;
+var img2;
 
 function setup() {
   createCanvas(720, 400);
   img = loadImage("bunsu.PNG");
+  img2 = loadImage("cupido.gif")
   system = new ParticleSystem(createVector(width/2, 50));
 }
 
@@ -12,6 +14,7 @@ function draw() {
   background(img);
   system.addParticle();
   system.run();
+  image(img2);
   
 }
 
