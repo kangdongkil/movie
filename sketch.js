@@ -29,7 +29,7 @@ function mouseClicked(){
   
 }
 function drawSa(){
-  image(img2,360,200);
+  image(img2,500,200);
 }
 
 // A simple Particle class
