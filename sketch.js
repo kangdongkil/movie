@@ -7,6 +7,10 @@ function setup() {
   img = loadImage("bunsu.PNG");
   img2 = loadImage("cupido.gif")
   system = new ParticleSystem(createVector(width/2, 50));
+  smallPoint = 4;
+  largePoint = 40;
+  imageMode(CENTER);
+  noStroke();
 }
 
 function draw() {
@@ -26,7 +30,14 @@ function mouseClicked(){
     }
   
 }
-
+function drawDot() { 
+  var pointillize = map(mouseX, 0, width, smallPoint, largePoint);
+  var x = floor(random(img.width));
+  var y = floor(random(img.height));
+  var pix = img.get(x, y);
+  fill(pix, 128);
+  ellipse(x, y, pointillize, pointillize);
+}
 // A simple Particle class
 var Particle = function(position) {
   this.acceleration = createVector(0, 0.05);
