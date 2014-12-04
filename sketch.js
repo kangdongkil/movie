@@ -51,7 +51,7 @@ function Jitter() {
   };
 
   this.display = function() {
-    ellipse(340, 10, 50, 50);
+    ellipse(this.x+350,this.y+10, 30, 30);
   }
 };
 
