@@ -2,6 +2,7 @@ var system;
 var img;
 var img2;
 var img3;
+var dir1=1;
 var f = 0;
 
 function setup() {
@@ -32,7 +33,10 @@ function mouseClicked(){
   
 }
 function drawSaram(){
-  image(img3,100,200);
+  image(img3,dir1,200);
+   dir1=dir1+3;     
+    if(dir1>1700){
+     dir1=-1700;
 }
 function drawSa(){
   image(img2,500,200);
