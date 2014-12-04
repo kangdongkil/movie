@@ -41,7 +41,7 @@ function drawSaram(){
 }
 }
 function drawSa(){
-  image(img2,500,200);
+  image(img2,dir2+500,200);
   dir2=dir2+3;     
     if(dir2>720){
      dir2=-720;
@@ -70,8 +70,8 @@ Particle.prototype.update = function(){
 
 // Method to display
 Particle.prototype.display = function() {
-  stroke(200, this.lifespan);
-  strokeWeight(2);
+  noStroke();
+  
   
   fill(Math.random()*255,Math.random()*255,Math.random()*255,100);
   ellipse(this.position.x, this.position.y, 12, 12);
