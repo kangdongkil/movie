@@ -18,10 +18,7 @@ function setup() {
   img2 = loadImage("s.png")
   img3 = loadImage("s2.png")
   system = new ParticleSystem(createVector(width/2, 50));
-  r = height * 0.45;
-  theta = 0;
-  theta_vel = 0;
-  theta_acc = 0.0001;
+ 
  
 }
 
@@ -34,28 +31,7 @@ function draw() {
   drawSaram();
   drawBang();
 }
-function drawBang() {
-  
-  
-  
-  // Translate the origin point to the center of the screen
-  translate(width/2, height/2);
-  
-  // Convert polar to cartesian
-  var x = r * cos(theta);
-  var y = r * sin(theta);
-  
-  // Draw the ellipse at the cartesian coordinate
-  ellipseMode(CENTER);
-  noStroke();
-  fill(200);
-  ellipse(x, y, 32, 32);
-  
-  // Apply acceleration and velocity to angle 
-  // (r remains static in this example)
-  theta_vel += theta_acc;
-  theta += theta_vel;
-}
+
 
 function mouseClicked(){
   if(f===0){
