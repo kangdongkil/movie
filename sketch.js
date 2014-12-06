@@ -55,7 +55,7 @@ function Jitter() {
 
   this.display = function() {
 
-   image(img4,360,this.y-10, 30, 30);
+   image(img4,360,this.y+10, 30, 30);
   }
 };
 
