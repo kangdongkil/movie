@@ -44,7 +44,7 @@ function drawBang() {
 
 function Jitter() {
   this.x = random(width);
-  this.y = random(height);
+  this.y = random(10);
   this.diameter = random(10, 30);
   this.speed = 1;
 
@@ -54,7 +54,7 @@ function Jitter() {
   };
 
   this.display = function() {
-   image(img4,360,this.y+10, 30, 30);
+   image(img4,360,this.y, 30, 30);
   }
 };
 
