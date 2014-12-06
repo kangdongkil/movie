@@ -43,7 +43,7 @@ function draw() {
 }
 function drawLing() {
  
-  
+  fill(255);
   var numPoints = map(mouseX, 0, width, 6, 60);
   var angle = 0;
   var angleStep = 180.0/numPoints;
