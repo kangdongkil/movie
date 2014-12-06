@@ -13,7 +13,8 @@ var song;
 
 function preload() {
   // Load a sound file
-  song = loadSound('a.mp3');
+  song1 = loadSound('a.mp3');
+
 }
 
 function setup() {
