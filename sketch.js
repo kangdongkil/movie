@@ -21,7 +21,7 @@ function setup() {
   img3 = loadImage("s2.png");
   img4 = loadImage("ball.png");
   system = new ParticleSystem(createVector(width/2, 50));
- /* bug = new Jitter();*/
+  bug = new Jitter();
  
 }
 
@@ -33,18 +33,15 @@ function draw() {
   drawSa();
   drawSaram();
   drawBang();
-  drawBall();
+ 
 }
 function drawBang() {
   
   bug.move();
   bug.display();
 }
-function drawBall(){
-  image(img4,Math.random()+360,Math.random()+200, 30, 30);
-}
 
-/*
+
 function Jitter() {
   this.x = random(width);
   this.y = random(height);
@@ -61,7 +58,7 @@ function Jitter() {
    image(img4,this.x+150,this.y-10, 30, 30);
   }
 };
-*/
+
 
 function mouseClicked(){
   if(f===0){
