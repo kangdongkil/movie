@@ -46,6 +46,9 @@ function draw() {
   drawSa();
   drawSaram();
   drawBang();
+  function mouseClicked(){
+  drawEnd();
+}
 
   // Set the volume to a range between 0 and 1.0
   /*var volume = map(30+mouseX, 0, width, 0, 1);
@@ -67,9 +70,7 @@ function draw() {
   ellipse(100, mouseY, 48, 48);*/
 
 }
-function mouseClicked(){
-  drawEnd();
-}
+
 
 function drawEnd() {
   a++;
