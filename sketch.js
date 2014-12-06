@@ -54,7 +54,6 @@ function Jitter() {
   };
 
   this.display = function() {
-   translate(360, 10);
    image(img4,360,this.y+10, 30, 30);
   }
 };
