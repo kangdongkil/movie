@@ -40,7 +40,7 @@ function draw() {
 
   // Set the volume to a range between 0 and 1.0
   
-  song.amp(1);
+  song.amp(10);
 
   // Set the rate to a range between 0.1 and 4
   // Changing the rate alters the pitch
