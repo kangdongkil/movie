@@ -9,7 +9,7 @@ var f = 0;
 var r;
 var bug; 
 // A sound file object
-var song;
+var song1;
 
 function preload() {
   // Load a sound file
@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   createCanvas(720, 400);
-  song.loop();
+  /*song.loop();*/
   img = loadImage("bunsu.PNG");
   img2 = loadImage("s.png");
   img3 = loadImage("s2.png");
@@ -40,7 +40,7 @@ function draw() {
   drawBang();
 
   // Set the volume to a range between 0 and 1.0
-  var volume = map(30+mouseX, 0, width, 0, 1);
+  /*var volume = map(30+mouseX, 0, width, 0, 1);
   volume = constrain(volume, 0, 1);
   song.amp(volume);
 
@@ -56,7 +56,7 @@ function draw() {
   ellipse(mouseX, 100, 48, 48);
   stroke(0);
   fill(51, 100);
-  ellipse(100, mouseY, 48, 48);
+  ellipse(100, mouseY, 48, 48);*/
 
 }
 
