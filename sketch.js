@@ -39,7 +39,7 @@ function draw() {
   drawBang();
 
   // Set the volume to a range between 0 and 1.0
-  var volume = map(1, 1, 1, 1, 1);
+  var volume = map(1, 0, width, 0, 1);
   volume = constrain(volume, 0, 1);
   song.amp(volume);
 
