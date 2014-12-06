@@ -8,6 +8,9 @@ var dir2=0;
 var f = 0;
 var r;
 var bug; 
+var a;
+var b;
+var direction;
 // A sound file object
 var song1;
 
@@ -26,6 +29,11 @@ function setup() {
   img4 = loadImage("ball.png");
   system = new ParticleSystem(createVector(width/2, 50));
   bug = new Jitter();
+  colorMode(RGB, width);
+  a = 0;
+  b = width;
+  direction = true;
+  frameRate(30);
 
  
 }
@@ -59,8 +67,34 @@ function draw() {
   ellipse(100, mouseY, 48, 48);*/
 
 }
+function mouseClicked(){
+  drawEnd();
+}
 
+function drawEnd() {
+  a++;
+  if(a > width) {
+    a = 0;
+    direction = !direction;
+  }
+  if(direction == true){
+    stroke(a);
+  } else {
+    stroke(width-a);
+  }
+  line(a, 0, a, height/2);
 
+  b--;
+  if(b < 0) {
+    b = width;
+  }
+  if(direction == true) {
+    stroke(width-b);
+  } else {
+    stroke(b);
+  }
+  line(b, height/2+1, b, height);
+}
 function drawBang() {
   
   bug.move();
@@ -85,14 +119,7 @@ function Jitter() {
 };
 
 
-function mouseClicked(){
-  if(f===0){
-        f=1;
-    }else if(f===1){
-        f=0;
-    }
-  
-}
+
 function drawSaram(){
   image(img3,dir1+100,200);
   
