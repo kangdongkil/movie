@@ -33,14 +33,18 @@ function draw() {
   drawSa();
   drawSaram();
   drawBang();
+  drawBall();
 }
 function drawBang() {
   
   bug.move();
   bug.display();
 }
+function drawBall(){
+  image(img4,Math.random()+360,Math.random()+200, 30, 30);
+}
 
-// Jitter class
+/*
 function Jitter() {
   this.x = random(width);
   this.y = random(height);
@@ -57,6 +61,7 @@ function Jitter() {
    image(img4,this.x+150,this.y-10, 30, 30);
   }
 };
+*/
 
 function mouseClicked(){
   if(f===0){
