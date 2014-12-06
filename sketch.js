@@ -38,6 +38,10 @@ function draw() {
   drawSaram();
   drawBang();
 
+  // Set the volume to a range between 0 and 1.0
+  var volume = map(1, 1, 1, 1, 1);
+  volume = constrain(volume, 0, 1);
+  song.amp(volume);
 
   // Set the rate to a range between 0.1 and 4
   // Changing the rate alters the pitch
