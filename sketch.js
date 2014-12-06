@@ -21,7 +21,7 @@ function setup() {
   img3 = loadImage("s2.png");
   img4 = loadImage("ball.png");
   system = new ParticleSystem(createVector(width/2, 50));
-  bug = new Jitter();
+ /* bug = new Jitter();*/
  
 }
 
