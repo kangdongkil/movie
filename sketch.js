@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   createCanvas(720, 400);
-  /*song.loop();*/
+  song1.loop();
   img = loadImage("bunsu.PNG");
   img2 = loadImage("s.png");
   img3 = loadImage("s2.png");
