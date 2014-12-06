@@ -8,6 +8,10 @@ var dir2=0;
 var f = 0;
 var r;
 var bug; 
+var x;
+var y;
+var outsideRadius = 150;
+var insideRadius = 100;
 
 // Angle and angular velocity, accleration
 var theta;
@@ -22,6 +26,8 @@ function setup() {
   img4 = loadImage("ball.png");
   system = new ParticleSystem(createVector(width/2, 50));
   bug = new Jitter();
+  x = width/2;
+  y = height/2;
  
 }
 
@@ -33,8 +39,29 @@ function draw() {
   drawSa();
   drawSaram();
   drawBang();
- 
+ drawLing();
 }
+function drawLing() {
+ 
+  
+  var numPoints = map(mouseX, 0, width, 6, 60);
+  var angle = 0;
+  var angleStep = 180.0/numPoints;
+    
+  beginShape(TRIANGLE_STRIP); 
+  for (var i = 0; i <= numPoints; i++) {
+    var px = x + cos(radians(angle)) * outsideRadius;
+    var py = y + sin(radians(angle)) * outsideRadius;
+    angle += angleStep;
+    vertex(px, py);
+    px = x + cos(radians(angle)) * insideRadius;
+    py = y + sin(radians(angle)) * insideRadius;
+    vertex(px, py); 
+    angle += angleStep;
+  }
+  endShape();
+}
+
 function drawBang() {
   
   bug.move();
