@@ -2,6 +2,7 @@ var system;
 var img;
 var img2;
 var img3;
+var img4;
 var dir1=0;
 var dir2=0;
 var f = 0;
@@ -16,8 +17,9 @@ var theta_acc;
 function setup() {
   createCanvas(720, 400);
   img = loadImage("bunsu.PNG");
-  img2 = loadImage("s.png")
-  img3 = loadImage("s2.png")
+  img2 = loadImage("s.png");
+  img3 = loadImage("s2.png");
+  img4 = loadImage("ball.png");
   system = new ParticleSystem(createVector(width/2, 50));
   bug = new Jitter();
  
@@ -52,7 +54,7 @@ function Jitter() {
 
   this.display = function() {
 
-    ellipse(this.x+130,this.y-100, 30, 30);
+   image(img4,this.x+130,this.y-100, 30, 30);
   }
 };
 
