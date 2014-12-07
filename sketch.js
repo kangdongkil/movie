@@ -9,36 +9,25 @@
   var r;
   var bug; 
   // A sound file object
-  var song1;
-  var input, button, greeting;
+  var song;
+
 
   function preload() {
     // Load a sound file
-    song1 = loadSound('a.mp3');
+    song = loadSound('a.mp3');
 
   }
 
   function setup() {
     createCanvas(720, 400);
-    song1.loop();
+    song.loop();
     img = loadImage("bunsu.PNG");
     img2 = loadImage("s.png");
     img3 = loadImage("s2.png");
     img4 = loadImage("ball.png");
     system = new ParticleSystem(createVector(width/2, 50));
     bug = new Jitter();
-       input = createInput();
-    input.position(20, 65);
 
-    button = createButton('submit');
-    button.position(150, 65);
-    button.mousePressed(greet);
-
-    greeting = createElement('h2', 'what is your name?');
-    greeting.position(20, 5);
-
-    textAlign(CENTER)
-    textSize(50);
 
    
   }
@@ -53,7 +42,7 @@
     drawBang();
 
     // Set the volume to a range between 0 and 1.0
-    /*var volume = map(30+mouseX, 0, width, 0, 1);
+    var volume = map(30+mouseX, 0, width, 0, 1);
     volume = constrain(volume, 0, 1);
     song.amp(volume);
 
@@ -69,7 +58,7 @@
     ellipse(mouseX, 100, 48, 48);
     stroke(0);
     fill(51, 100);
-    ellipse(100, mouseY, 48, 48);*/
+    ellipse(100, mouseY, 48, 48);
 
   }
   function greet() {
