@@ -27,7 +27,18 @@
     img4 = loadImage("ball.png");
     system = new ParticleSystem(createVector(width/2, 50));
     bug = new Jitter();
-   
+       input = createInput();
+    input.position(20, 65);
+
+    button = createButton('submit');
+    button.position(150, 65);
+    button.mousePressed(greet);
+
+    greeting = createElement('h2', 'what is your name?');
+    greeting.position(20, 5);
+
+    textAlign(CENTER)
+    textSize(50);
 
    
   }
@@ -40,18 +51,7 @@
     drawSa();
     drawSaram();
     drawBang();
-   input = createInput();
-    input.position(20, 65);
 
-    button = createButton('submit');
-    button.position(150, 65);
-    button.mousePressed(greet);
-
-    greeting = createElement('h2', 'what is your name?');
-    greeting.position(20, 5);
-
-    textAlign(CENTER)
-    textSize(50);
     // Set the volume to a range between 0 and 1.0
     /*var volume = map(30+mouseX, 0, width, 0, 1);
     volume = constrain(volume, 0, 1);
