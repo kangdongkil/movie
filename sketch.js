@@ -53,14 +53,14 @@
     song.rate(speed);
 
     // Draw some circles to show what is going on
+    /*
     stroke(0);
     fill(51, 100);
-     rotate(frameCount / 200.0);
     ellipse(mouseX, 100, 48, 48);
     stroke(0);
     fill(51, 100);
     ellipse(100, mouseY, 48, 48);
-
+*/
   }
   function greet() {
     var name = input.value();
