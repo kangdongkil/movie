@@ -55,7 +55,11 @@
     // Draw some circles to show what is going on
     stroke(0);
     fill(51, 100);
-    star(mouseX, 0, 80, 100, 40); 
+    push();
+    translate(width*0.2, height*0.5);
+    rotate(frameCount / 200.0);
+  polygon(mouseX, 0, 82, 3); 
+  pop(); 
     stroke(0);
     fill(51, 100);
     ellipse(100, mouseY, 48, 48);
