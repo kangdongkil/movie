@@ -55,7 +55,7 @@
     // Draw some circles to show what is going on
     stroke(0);
     fill(51, 100);
-    ellipse(mouseX, 100, 48, 48);
+    star(mouseX, 0, 80, 100, 40); 
     stroke(0);
     fill(51, 100);
     ellipse(100, mouseY, 48, 48);
